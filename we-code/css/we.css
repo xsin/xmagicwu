@@ -135,6 +135,79 @@ html,body{overflow:hidden;position:relative;}
 .btn-04{top:60%;background-color:#cdcdcd;color:#333333;}
 /* E page6 */
 
+/* S page-speaker */
+.speaker-title,
+.item-text{position:absolute;background:url(../img/speaker_text.png) no-repeat;background-size:253px auto;text-indent:-999em;}
+.item-text{width:253px;left:50%;margin-left:-126px;}
+.speaker-title{right:0;top:15px;background-position:-70px 0;width:183px;height:93px;}
+.speaker-list{padding-top:100px;}
+.speaker-list .list-item{position:relative;height:149px;}
+.speaker-list .list-item:before{
+    position:absolute;
+    content:"";width:95px;height:85px;background:url(../img/speaker_line.png) no-repeat;background-size:95px 171px;
+}
+.speaker-list .list-item:nth-child(1):before{
+    display:none;
+}
+.speaker-list .list-item:nth-child(odd):before{
+    left:105px;top:-60px;background-position:0 -85px;
+}
+.speaker-list .list-item:nth-child(even):before{
+    left:105px;top:-44px;background-position:0 0;
+}
+.speaker-list .item-img{position:absolute;top:0;left:50%;width:128px;height:128px;background:url(../img/speaker_head_bg.png) no-repeat;background-size:100% 100%;}
+.speaker-list .item-img img{width:77px;height:77px;position:absolute;left:25px;top:25px;border-radius:77px;}
+.speaker-list .item-text{position:absolute;top:50%;left:50%;width:320px;}
+.speaker-list .list-item:nth-child(odd) .item-img{margin-left:-150px;}
+.speaker-list .list-item:nth-child(even) .item-img{margin-left:22px;}
+.text-01{height:31px;background-position:0 -94px;margin-top:-20px;}
+.text-02{height:44px;background-position:0 -126px;margin-top:-35px;}
+.text-03{height:44px;background-position:0 -171px;margin-top:-35px;}
+.text-04{height:73px;background-position:0 -216px;margin-top:-50px;}
+.text-05{height:43px;background-position:0 -290px;margin-top:-35px;}
+.text-06{height:50px;background-position:0 -334px;margin-top:-35px;}
+.text-07{height:70px;background-position:0 -385px;margin-top:-50px;}
+.text-08{height:30px;background-position:0 -456px;margin-top:-20px;}
+.text-09{height:58px;background-position:0 -487px;margin-top:-35px;}
+.text-10{height:58px;background-position:0 -546px;margin-top:-35px;}
+.text-11{height:30px;background-position:0 -605px;margin-top:-20px;}
+.text-12{height:48px;background-position:0 -636px;margin-top:-35px;}
+/* E page-speaker */
+
+/* S timeline */
+.timeline{position:relative;padding-top:47px;}
+.timeline:before{
+    content:"";position:absolute;top:16px;left:50%;
+    width:18px;height:18px;margin-left:-64px;
+    background:url(../img/clock@2x.png) no-repeat;background-size:100% 100%;
+}
+.timeline:after{
+    content:"";position:absolute;left:50%;top:33px;
+    width:1px;height:999em;margin-left:-56px;
+    background-color:#edab12;
+}
+.timeline-title{
+    position:absolute;top:16px;left:0;right:0;
+    color:#cccccc;font-family:"MicroSoft YaHei";font-weight:100;font-size:12px;
+}
+.timeline .timeline-item{height:90px;}
+.timeline .item-img{width:265px;height:73px;display:block;margin:0 auto;position:relative;z-index:2;}
+.timeline .item-img img{width:100%;}
+/* E timeline */
+
+/* S history */
+.history-box{overflow:hidden;padding-top:15px;}
+.history-img-list{float:left;width:113px;}
+.history-img-list .list-item{
+    margin:0 11px;
+}
+.history-img-list .list-item img{width:88px;}
+.history-weibo{
+    margin-left:113px;background-color:#fff;height:100%;overflow:hidden;
+}
+.weibo-list .list-item img{width:207px;}
+/* E history */
+
 .font-empty{background:0;top:5%;height:15px;}
 .font-empty .timebox{text-indent:0;position:absolute;left:50px;color:#e59b11;font-size:19px;line-height:13px;font-family:"MicroSoft YaHei";}
 .font-21{width:42px;height:15px;background-position:0 -673px;left:0;margin:0;}
@@ -190,7 +263,7 @@ html,body{overflow:hidden;position:relative;}
 .guest-list .item-name{display:block;font-size:10px;color:#fff;}
 
 .app{
-	background:url(../img/bg.jpg) no-repeat;background-size:100% 100%;
+	background:url(../img/bg.jpg) no-repeat fixed;background-size:100% 100%;
 	text-align:center;
 }
 
@@ -218,7 +291,7 @@ html,body{overflow:hidden;position:relative;}
 .guest-pop .popback{
 	position:absolute;bottom:12px;left:50%;z-index:10;
 	width:42px;height:42px;margin:0 0 0 -21px;
-	background-position:0 -422px;
+	background:url(../img/pop_back.png) no-repeat 0 0;background-size:100%;
 }
 
 
@@ -271,11 +344,11 @@ html,body{overflow:hidden;position:relative;}
 }
 
 .u-guidePrev {
-    left:38px
+    left:18px
 }
 
 .u-guideNext {
-    right:38px;
+    right:18px;
     -webkit-transform: rotateZ(180deg)
 }
 
